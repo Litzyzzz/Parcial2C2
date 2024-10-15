@@ -11,12 +11,12 @@ edad = [17, 18, 19, 20]
 grafico = figure(title="Gráfico de barras", 
                  x_axis_label="Nombres", 
                  y_axis_label="Edades", 
-                 x_range=nombres)# Crear la figura (el lienzo donde se dibujará el gráfico)
+                 x_range=nombres)# Crea la figura (el lienzo donde se dibujará el grafico)
 
 grafico.vbar(x=nombres, top=edad,width=0.4, 
              color=["purple","pink","fuchsia","lavender"])# Dibuja las barras usando los datos
 
-show(grafico)# Mostrar el gráfico en el navegador"""
+show(grafico)# Muestra el gráfico en el navegador"""
 
 output_file("graficoDisp.html")
 
