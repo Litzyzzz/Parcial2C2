@@ -1,6 +1,6 @@
 import pandas as pd
-from bokeh.plotting import figure, show
-from bokeh.io import output_file
+from bokeh.plotting import figure, show, output_file
+
 from bokeh.models import DatetimeTickFormatter
 
 datos = pd.read_csv("covid19.csv") #se importan los datos a graficar
@@ -12,7 +12,7 @@ datos["Date"] = pd.to_datetime(datos["Date"])#se configura la fecha porque daba 
 g = figure(title="Aumento de muertes COVID19",
            x_axis_label="Fechas", y_axis_label="Muertes", x_axis_type="datetime")
 
-# Configura el formato de fechas en el eje X, cuando se le hace zoom
+# Configura el formato de fechas en el eje x, cuando se le hace zoom
 g.xaxis.formatter = DatetimeTickFormatter(
   days="%d/%m/%Y",
   months="%d/%m/%Y", 

@@ -1,11 +1,11 @@
 
-from bokeh.plotting import figure, show
-from bokeh.io import output_file
+from bokeh.plotting import figure, show, output_file
 
 
-#output_file("graficoB.html")#se indica el archivo que se abrirá en la web
 
-"""nombres = ["Litzy", "Yohana","Blanca", "Katia"]# datos a graficar
+"""output_file("graficoB.html")#se indica el archivo que se abrirá en la web
+
+nombres = ["Litzy", "Yohana","Blanca", "Katia"]# datos a graficar
 edad = [17, 18, 19, 20]
 
 grafico = figure(title="Gráfico de barras", 
@@ -16,17 +16,18 @@ grafico = figure(title="Gráfico de barras",
 grafico.vbar(x=nombres, top=edad,width=0.4, 
              color=["purple","pink","fuchsia","lavender"])# Dibuja las barras usando los datos
 
-show(grafico)# Muestra el gráfico en el navegador"""
+show(grafico)# Muestra el gráfico en el navegador
 
+
+"""
 output_file("graficoDisp.html")
 
 # Datos
 x = [1, 2, 3, 4, 5]
 y = [6, 7, 2, 4, 5]
 
-
 p = figure(title="Gráfico de Dispersión", x_axis_label='X', y_axis_label='Y')# Crea figura
 
-p.scatter(x, y, size=10, color="red", alpha=0.5)# Añade los puntos
+p.scatter(x, y, size=10, color="red")# Añade los puntos
 
-show(p)# Muestra el gráfico
+show(p)# Muestra el gráfico"""
