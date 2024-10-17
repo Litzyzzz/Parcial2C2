@@ -6,6 +6,7 @@ from bokeh.models import DatetimeTickFormatter
 datos = pd.read_csv("covid19.csv") #se importan los datos a graficar
 
 output_file("lineasDS.html")#en que archivo queremos que se muestre
+
 datos["Date"] = pd.to_datetime(datos["Date"])#se configura la fecha porque daba error
 
 #se crea el lienzo mediante figure
