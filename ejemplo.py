@@ -22,12 +22,12 @@ show(grafico)# Muestra el gráfico en el navegador
 """
 output_file("graficoDisp.html")
 
-# Datos
+#datos
 x = [1, 2, 3, 4, 5]
 y = [6, 7, 2, 4, 5]
 
 p = figure(title="Gráfico de Dispersión", x_axis_label='X', y_axis_label='Y')# Crea figura
 
-p.scatter(x, y, size=10, color="red")# Añade los puntos
+p.scatter(x, y, size=10, color="red")#añade los puntos
 
-show(p)# Muestra el gráfico"""
+show(p)# muestra el gráfico"""
