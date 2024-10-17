@@ -16,7 +16,7 @@ grafico = figure(title="Gráfico de barras",
 grafico.vbar(x=nombres, top=edad,width=0.4, 
              color=["purple","pink","fuchsia","lavender"])# Dibuja las barras usando los datos
 
-show(grafico)# Muestra el gráfico en el navegador
+show(grafico)#muestra el grafico en el navegador
 
 
 """
